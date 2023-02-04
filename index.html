@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Menu</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/quantity.css">
 </head>
 <body>
     <div class="container">
@@ -26,18 +27,36 @@
                         <img name="itemMenu" src="./assets/bife.jpg" height="200px" width="150px" alt="Bife com Batata">
                         <p>Bife com Batata</p>
                         <p>30,00</p>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
                     </div>
     
                     <div class="foodItem">
                         <img src="./assets/coxa.jpg" height="200px" width="150px" alt="Coxa de Frango Crocante">
                         <p>Coxa de Frango Crocante</p>
                         <p>25,00</p>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
                     </div>
     
                     <div class="foodItem">
                         <img src="./assets/panela.jpg" height="200px" width="150px" alt="Carne de Panela">
                         <p>Carne de Panela</p>
                         <p>22,00</p>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
                     </div>
                 </div>
                 
@@ -52,16 +71,36 @@
                         <img src="./assets/farofa.jpg" height="200px" width="150px" alt="Farofa">
                          <p>Farofa</p>
                          <p>10,00</p>
+                         <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
                     </div>
+
                     <div class="foodItem">
                         <img src="./assets/salad.jpg" height="200px" width="150px" alt="Salada">
                         <p>Salada</p>
                         <p>8,00</p>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
                     </div>
+                    
                     <div class="foodItem">
                         <img src="./assets/torresmo.jpg" height="200px" width="150px" alt="Torresmo">
                         <p>Torresmo</p>
                         <p>12,00</p>
+                        <div class="quantity buttons_added">
+                            <input type="button" value="-" class="minus">
+                            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                                class="input-text qty text" size="4" pattern="" inputmode="">
+                            <input type="button" value="+" class="plus">
+                        </div>
                     </div>
                 </div>
                 
@@ -78,5 +117,9 @@
         <div class="output"></div>
 
     </div>
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/quantity.js"></script>
 </body>
 </html>
