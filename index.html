@@ -5,21 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Menu</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container">
         <header>
-
+            <img src="./assets/home.jpg" alt="Home img">
         </header>
 
-        <div class="foodCard"></div>
-        <div class="foodCard"></div>
+        <p>Menu -  Faça A sua Escolha</p>
 
+        <div class="foodCard">
+           <header>
+                 <h2>Prato principal</h2>
+                 <p>Todos os pratos acompanham arroz, feijão e a sobremesa do dia.</p>
+           </header>
+
+                <div class="rowItems">
+                    <div class="foodItem">
+                        <img name="itemMenu" src="./assets/bife.jpg" height="200px" width="150px" alt="Bife com Batata">
+                        <p>Bife com Batata</p>
+                        <p>30,00</p>
+                    </div>
+    
+                    <div class="foodItem">
+                        <img src="./assets/coxa.jpg" height="200px" width="150px" alt="Coxa de Frango Crocante">
+                        <p>Coxa de Frango Crocante</p>
+                        <p>25,00</p>
+                    </div>
+    
+                    <div class="foodItem">
+                        <img src="./assets/panela.jpg" height="200px" width="150px" alt="Carne de Panela">
+                        <p>Carne de Panela</p>
+                        <p>22,00</p>
+                    </div>
+                </div>
+                
+        </div>
+
+        <div class="foodCard">
+            <h2>Acompanhamentos </h2>
+            <p>Porções para uma pessoa.</p>
+                
+                <div class="rowItems">
+                    <div class="foodItem">
+                        <img src="./assets/farofa.jpg" height="200px" width="150px" alt="Farofa">
+                         <p>Farofa</p>
+                         <p>10,00</p>
+                    </div>
+                    <div class="foodItem">
+                        <img src="./assets/salad.jpg" height="200px" width="150px" alt="Salada">
+                        <p>Salada</p>
+                        <p>8,00</p>
+                    </div>
+                    <div class="foodItem">
+                        <img src="./assets/torresmo.jpg" height="200px" width="150px" alt="Torresmo">
+                        <p>Torresmo</p>
+                        <p>12,00</p>
+                    </div>
+                </div>
+                
+        </div>
+            
         <form action="" method="get">
             <input type="text">
             <input type="text">
             <input type="text">
 
+            <button>Calcular</button>
         </form>
         
         <div class="output"></div>
