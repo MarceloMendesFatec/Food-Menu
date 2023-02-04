@@ -90,7 +90,7 @@
                             <input type="button" value="+" class="plus">
                         </div>
                     </div>
-                    
+
                     <div class="foodItem">
                         <img src="./assets/torresmo.jpg" height="200px" width="150px" alt="Torresmo">
                         <p>Torresmo</p>
@@ -106,13 +106,19 @@
                 
         </div>
             
-        <form action="" method="get">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+       
+       <div class="form">
+            <form action="" method="">
+                <h3>Dados Pessoais</h3>
+                <input class="form1" type="name"  id="name1" placeholder="Digite seu Nome">
+                <input class="form1" type="text" id="phone" placeholder="Digite seu Telefone">
+                <input class="form1" type="email" placeholder="Digite seu Email">
 
-            <button>Calcular</button>
-        </form>
+            </form>
+       </div> 
+       
+       <button type="submit">Calcular</button>
+       
         
         <div class="output"></div>
 
@@ -121,5 +127,7 @@
 
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/quantity.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
