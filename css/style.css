@@ -8,7 +8,11 @@ body{
     height: 200px;
 }
 
-
+button{
+    
+    margin: 1rem;
+    padding: 1rem;
+}
 
 .container{
     background-color: #FFFF;
