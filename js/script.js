@@ -44,11 +44,11 @@ function showOrder(){
           if(input.value >= 1){
               output.innerHTML += `• Prato: = ${products[id-1].name} - 
               Preço Unitario: ${formatter.format(products[id-1].price)} 
-              Quantidade: ${input.value} </br></br></br>`;
+              Quantidade: ${input.value} </br>`;
               result += products[id-1].price * parseFloat(input.value);
           }
       };
 
-      output.innerHTML += `<strong>Preço final : ${formatter.format(result)}</strong>`;
+      output.innerHTML += `</br><strong>Preço final : ${formatter.format(result)}</strong>`;
       
 };
