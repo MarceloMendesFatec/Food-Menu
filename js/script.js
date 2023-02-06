@@ -26,17 +26,17 @@ name1.addEventListener("keypress", function(e) {
 
 function showOrder(){
   
-      var quantities  = document.getElementsByName("quantity");
+      var quantities  = document.getElementsByName("quantity"); // Recebe todos os elementos com nome quantity no HTML
       var output      = document.getElementById("output");
       var result      = 0;
       output.innerHTML = `Caro <strong>${name1.value}</strong></br></br></br>
                           Seguem os dados do seu pedido. </br></br>
                           O seu pedido e: </br></br>`;
                           
-      for (var input of quantities) {
+      for (var input of quantities) { // Percorre todos os itens (quantities) vindo do HTML
 
           let id = input.id; 
-          var formatter = new Intl.NumberFormat('pt-BR', {
+          var formatter = new Intl.NumberFormat('pt-BR', { // formatador para moeda corrente
             style: 'currency',
             currency: 'BRL',
           });
